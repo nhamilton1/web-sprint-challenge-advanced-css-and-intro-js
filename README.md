@@ -31,9 +31,44 @@ Please answer the following questions below, you may edit the readme file to inc
     to avoid using large images or compress them. 
 
 2. Talk about 3 different things you can do to ensure your website is accessible. 
+
+    First, you can use semantic HTML, making sure you are not using divs everywhere and that you are using the most semantic element as possible.
+    Make sure you are defining the different parts of your web page. 
+    
+    Second, you would want to use scalable units for fonts. Font sizes that use %, or rem gives the site scalability. However, using fixed
+    units of measure, such as pixels, does not give scalability. Using the scalable font will allow using to enlarge the text to make it
+    easier for them to see. 
+
+    Last, but not least, You will also want to make sure your h1h-h6 have meaning, because people might use screen readers to jump around based off those tags.
+    Furthermore, this helps the user understand the structure and how your website is orginized. 
+
+
 3. How would you explain the concept of a variable to someone new to programming?
+
+    Variables are an extremely important part of programming, for this instance javaScript. Think of variables as a way to store values that you 
+    can reference and/or retrieve later on in your program. 
+
+    There are three ways to declare a variable in javascript: var, let, and const.
+    3b. Var is an older way if declaring a varaible. Var can be can be redefined, redeclared, and is function scoped.
+    3c. Let - cannot be redeclared, but it can be reassigned and is block scoped 
+    3d. const - cannot be redeclared, cannot be reassigned, and is block scoped  
+
+
 4. What is the purpose of using functions in code?
+
+    A function is a block of code made to perform a task. A function will protect a block of code until they are invoked. Functions allow you to 
+    store a piece of code that does a task inside of that block. When you want to you can just use a short command.  
+
+
 5. How do you access a key inside of an object inside of an array?
+
+    for example: const town = {
+        name: 'Southold',
+        attractions: 'beaches',
+    }
+
+    console.log(town.name);   // one way would be to use dot notation: this will go into town, then to name, and give southold back. 
+    console.log(town['name']); //the other way is bracket notation. this is useful if you had keys with spaces in them
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
