@@ -22,6 +22,7 @@ vertical-align: baseline;
 /*GENERAL STYLES*/
 html{
     font-size:62.5%;
+    text-align: center;
 }
 body{
     font-size:1.6rem;
@@ -64,7 +65,8 @@ img:hover {
 }	
 
 *{
-    /* border: 1px solid black; */
+    border: 1px solid black;
+    box-sizing: border-box;
 }
 
 /*HEADER STYLES */
@@ -134,7 +136,7 @@ button:hover{
 .artists-container{
     display:flex;
     justify-content: space-around;
-    width:80%;
+    width: 80%;
     margin:0 auto;
     border-top: 1px solid gray;
    
@@ -150,21 +152,26 @@ button:hover{
 }
 
 .artist{
-    width:70%;
-    text-align:center;
     margin-top: 5%;
+    height: 50%;
 }
 .artist img{
     width:100%;
 }
+.artist1 {
+    width: 50%;
+}
+.artist2 {
+    width: 50%;
+}
 
 /* Media Queries */
 
-@media(max-width: 500px){
+@media screen and (max-width: 500px){
     .title-container div{
         width: 100%;
     }
-    .title-container div {
+    .title-container{
         border-bottom: 1px solid gray;
     } 
     .title-container h1 {
@@ -172,10 +179,12 @@ button:hover{
         width: 40%;
     }
     .artists-container{
+        text-align: center;
+        display: block;
+        width: 80%;
+    }
+    .artists-container img{
         width: 100%;
-        display: flex;
-        flex-flow: row wrap;
-
     }
     .bio p{
         font-size: 1.6rem;
