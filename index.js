@@ -251,7 +251,7 @@ function get20s(array) {
   /*Your Code Here*/
   const century = [];
   for (let i = 0; i < array.length; i++){
-    if (array[i].years.split(`,`).map(parseFloat) > 1900){
+    if (parseInt(array[i].years.split(",")) > 1900){
       century.push(array[i].name);
     }
   }
@@ -261,7 +261,11 @@ function get20s(array) {
 console.log('Task 4:', get20s(artists))
 
 //&& array[i].years.split(" ").length >= 1901
-
+// if (array[i].years.split(",")){    // if (array[i].years.split(`,`).map(parseFloat) > 1900) this works, but cant use .map
+//   century.push(array[i].name);
+// }
+// }
+// return century
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use removeArtist to do the following:
