@@ -230,10 +230,12 @@ Use getArtistByIndex to do the following:
 
 Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
-function getArtistByIndex(/*Your Code Here*/) {
+function getArtistByIndex(array, index) {
   /*Your Code Here*/
+  return `the artist at index ${array[index].id} is ${array[index].name}`
 }
 
+// console.log('Task 3:', getArtistByIndex(artists, 0));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -245,9 +247,18 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
-function get20s(/*Your Code Here*/) {
+function get20s(array) {
   /*Your Code Here*/
+  const century = [];
+  for (let i = 0; i < array.length; i++){
+    if (array[i].years.split(" ").years <= 1959 && array[i].years.split(" ").years >= 1901){
+      century.push(array[i]);
+    }
+  }
+  return century
 }
+
+console.log('Task 4:', get20s(artists))
 
 
 
@@ -260,7 +271,7 @@ Use removeArtist to do the following:
 
 For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(/*Your Code Here*/) {
+function removeArtist(array, index) {
   /*Your Code Here*/
 }
 
@@ -281,8 +292,10 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/) {
+function addArtist(array) {
   /*Your Code Here*/
+  array.push({id: 20, name: 'Nick', years: 1992, genre: 'Web Design', nationality: 'perfer not to say', bio: 'Currently taking intruging classes about web developemnt. In my free time, I study javascript and go to the gym.'})
+  return array
 }
 
 
