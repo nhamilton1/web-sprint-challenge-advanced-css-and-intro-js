@@ -273,8 +273,15 @@ For example, if removeArtist is invoked with the artists array and the number 0,
 
 function removeArtist(array, index) {
   /*Your Code Here*/
+  for(let i = 0; i < array.length; i++){
+    if(array[i] === array[index]){
+      array.splice(i,1)
+    }
+  }
+  return array.length
 }
 
+console.log('Task 5:', removeArtist(artists, 0));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
@@ -310,6 +317,13 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 function lotsOfArt(/*Your Code Here*/) {
   /*Your Code Here*/
 }
+
+
+
+
+
+
+
 
 
 /* ***** END OF TASKS ***** */
