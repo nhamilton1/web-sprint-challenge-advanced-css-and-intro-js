@@ -209,11 +209,11 @@ Practice accessing data above by console.log-ing following items:
 
 //(1) Name of the first artist (0th index) in the array
 
-// console.log('Task 1:',artists[0]); 
+console.log('Task 1:',artists[0]); 
 
 //(2) Bio of the third artist (2nd index) in the array 
 
-// console.log('Task 1b:', artists[2].bio)
+console.log('Task 1b:', artists[2].bio)
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 (no function needed) 
@@ -235,7 +235,7 @@ function getArtistByIndex(array, index) {
   return `the artist at index ${array[index].id} is ${array[index].name}`
 }
 
-// console.log('Task 3:', getArtistByIndex(artists, 0));
+console.log('Task 3:', getArtistByIndex(artists, 0));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -286,7 +286,7 @@ function removeArtist(array, index) {
   return array.length
 }
 
-// console.log('Task 5:', removeArtist(artists, 0));
+console.log('Task 5:', removeArtist(artists, 0));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
@@ -330,7 +330,7 @@ function lotsOfArt(array) {
   return alotOfPaintings;
 }
 
-// console.log('Task 7:',lotsOfArt(artists));
+console.log('Task 7:',lotsOfArt(artists));
 
 
 
