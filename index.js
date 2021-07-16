@@ -251,14 +251,14 @@ function get20s(array) {
   /*Your Code Here*/
   const century = [];
   for (let i = 0; i < array.length; i++){
-    if (array[i].years.split(" ").length > 2){
+    if (array[i].years.split(`,`).map(parseFloat) > 1900){
       century.push(array[i].name);
     }
   }
   return century
 }
 
-// console.log('Task 4:', get20s(artists))
+console.log('Task 4:', get20s(artists))
 
 //&& array[i].years.split(" ").length >= 1901
 
@@ -326,7 +326,7 @@ function lotsOfArt(array) {
   return alotOfPaintings;
 }
 
-console.log('Task 7:',lotsOfArt(artists));
+// console.log('Task 7:',lotsOfArt(artists));
 
 
 
