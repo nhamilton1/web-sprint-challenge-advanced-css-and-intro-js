@@ -251,15 +251,16 @@ function get20s(array) {
   /*Your Code Here*/
   const century = [];
   for (let i = 0; i < array.length; i++){
-    if (array[i].years.split(" ").years <= 1959 && array[i].years.split(" ").years >= 1901){
-      century.push(array[i]);
+    if (array[i].years.split(" ").length > 2){
+      century.push(array[i].name);
     }
   }
   return century
 }
 
-console.log('Task 4:', get20s(artists))
+// console.log('Task 4:', get20s(artists))
 
+//&& array[i].years.split(" ").length >= 1901
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -281,7 +282,7 @@ function removeArtist(array, index) {
   return array.length
 }
 
-console.log('Task 5:', removeArtist(artists, 0));
+// console.log('Task 5:', removeArtist(artists, 0));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
@@ -314,11 +315,18 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/) {
+function lotsOfArt(array) {
   /*Your Code Here*/
+  const alotOfPaintings = []
+  for (let i = 0; i < array.length; i++){
+    if (array[i].paintings > 100){
+      alotOfPaintings.push(array[i].name);
+    }
+  }
+  return alotOfPaintings;
 }
 
-
+console.log('Task 7:',lotsOfArt(artists));
 
 
 
